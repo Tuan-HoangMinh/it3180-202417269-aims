@@ -32,5 +32,13 @@ Các thay đổi đáng chú ý của dự án AIMS-mini được ghi nhận t�
 
 
 
+\## \[1.0.1] - 2026-11-02
 
+
+
+\### Fixed
+
+\- Sửa lỗi search\_by\_title() phân biệt chữ hoa và chữ thường.
+
+\- Tìm kiếm "lion" có thể tìm thấy "The Lion King" (#20).
 
