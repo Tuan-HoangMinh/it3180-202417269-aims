@@ -48,3 +48,13 @@ Các thay đổi đáng chú ý của dự án AIMS-mini được ghi nhận t�
 
 \- Cải thiện các chức năng tìm kiếm và quản lý giỏ hàng.
 
+
+
+\## \[1.0.1] - 2026-11-02
+
+
+
+\### Fixed
+
+\- Sửa lỗi search\_by\_title() phân biệt chữ hoa và chữ thường (#20).
+
