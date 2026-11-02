@@ -38,3 +38,11 @@ class Cart:
 
     	print(f"Total cost: {self.total_cost():.2f} $")
     	print("***************************************************")
+
+     def sort_by_title(self):
+    	self.items.sort(key=lambda dvd: dvd.title.casefold())
+    	return self.items
+
+     def sort_by_cost(self):
+    	self.items.sort(key=lambda dvd: dvd.cost)
+    	return self.items
