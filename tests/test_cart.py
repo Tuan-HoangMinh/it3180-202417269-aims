@@ -15,36 +15,33 @@ class TestCart(unittest.TestCase):
         dvd_21 = DigitalVideoDisc("DVD 21", cost=0.8)
         self.assertFalse(cart.add_dvd(dvd_21))
 
-
     def test_sort_by_title(self):
-    	cart = Cart()
+        cart = Cart()
 
-    	cart.add_dvd(DigitalVideoDisc("Star Wars", cost=20))
-    	cart.add_dvd(DigitalVideoDisc("Aladdin", cost=10))
-    	cart.add_dvd(DigitalVideoDisc("The Lion King", cost=30))
+        cart.add_dvd(DigitalVideoDisc("Star Wars", cost=20))
+        cart.add_dvd(DigitalVideoDisc("Aladdin", cost=10))
+        cart.add_dvd(DigitalVideoDisc("The Lion King", cost=30))
 
-    	cart.sort_by_title()
+        cart.sort_by_title()
+        titles = [dvd.title for dvd in cart.items]
 
-    	titles = [dvd.title for dvd in cart.items]
-
-    	self.assertEqual(
-        	titles,
-        	["Aladdin", "Star Wars", "The Lion King"]
-    	)
-
+        self.assertEqual(
+            titles,
+            ["Aladdin", "Star Wars", "The Lion King"]
+        )
 
     def test_sort_by_cost(self):
-    	cart = Cart()
+        cart = Cart()
 
-    	cart.add_dvd(DigitalVideoDisc("Star Wars", cost=20))
-    	cart.add_dvd(DigitalVideoDisc("Aladdin", cost=10))
-    	cart.add_dvd(DigitalVideoDisc("The Lion King", cost=30))
+        cart.add_dvd(DigitalVideoDisc("Star Wars", cost=20))
+        cart.add_dvd(DigitalVideoDisc("Aladdin", cost=10))
+        cart.add_dvd(DigitalVideoDisc("The Lion King", cost=30))
 
-    	cart.sort_by_cost()
+        cart.sort_by_cost()
+        costs = [dvd.cost for dvd in cart.items]
 
-    	costs = [dvd.cost for dvd in cart.items]
+        self.assertEqual(costs, [10, 20, 30])
 
-    	self.assertEqual(costs, [10, 20, 30])
 
 if __name__ == "__main__":
     unittest.main()
