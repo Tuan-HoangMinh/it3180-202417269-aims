@@ -9,10 +9,10 @@ class TestCart(unittest.TestCase):
         cart = Cart()
 
         for i in range(20):
-            dvd = DigitalVideoDisc(f"DVD {i}", cost=0.8)
+            dvd = DigitalVideoDisc(f"DVD {i}", cost=80)
             self.assertTrue(cart.add_dvd(dvd))
 
-        dvd_21 = DigitalVideoDisc("DVD 21", cost=0.8)
+        dvd_21 = DigitalVideoDisc("DVD 21", cost=80)
         self.assertFalse(cart.add_dvd(dvd_21))
 
 
