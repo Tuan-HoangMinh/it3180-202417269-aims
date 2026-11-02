@@ -34,3 +34,17 @@ Các thay đổi đáng chú ý của dự án AIMS-mini được ghi nhận t�
 
 \- Sửa lỗi giỏ hàng chấp nhận DVD thứ 21 khi giới hạn là 20 (#6).
 
+
+
+\## \[1.1.0] - 2026-11-02
+
+
+
+\### Added
+
+\- Thêm search\_by\_category() để tìm DVD theo thể loại.
+
+\- Thêm sort\_by\_title() và sort\_by\_cost() cho Cart.
+
+\- Cải thiện các chức năng tìm kiếm và quản lý giỏ hàng.
+
